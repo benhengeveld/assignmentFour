@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment Four by Ben Hengeveld</title>
+        <link rel="stylesheet" href="orders.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><u>Orders</u></h1>
+        </header>
+        
+        <main>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>Postal Code</th>
+                    <th>Province</th>
+                    <th>Phone</th>
+                    <th>Email</th>
+                    <th>Product One</th>
+                    <th>Product One Price</th>
+                    <th>Product Two</th>
+                    <th>Product Two Price</th>
+                    <th>Product Three</th>
+                    <th>Product Three Price</th>
+                    <th>Delivery Time (Days)</th>
+                    <th>Shipping Charge</th>
+                    <th>Sub Total</th>
+                    <th>Tax</th>
+                    <th>Total</th>
+                </tr>
+
+                <%
+                for(order of orders){
+                %>
+                    <tr>
+                        <th><%= order.name %></th>
+                        <th><%= order.address %></th>
+                        <th><%= order.city %></th>
+                        <th><%= order.postalCode %></th>
+                        <th><%= order.province %></th>
+                        <th><%= order.phone %></th>
+                        <th><%= order.email %></th>
+                        <th><%= order.productOne %></th>
+                        <th>$<%= order.productOnePrice.toFixed(2) %></th>
+                        <th><%= order.productTwo %></th>
+                        <th>$<%= order.productTwoPrice.toFixed(2) %></th>
+                        <th><%= order.productThree %></th>
+                        <th>$<%= order.productThreePrice.toFixed(2) %></th>
+                        <th><%= order.deliveryTime %></th>
+                        <th>$<%= order.shippingCharge.toFixed(2) %></th>
+                        <th>$<%= order.subTotal.toFixed(2) %></th>
+                        <th>$<%= order.tax.toFixed(2) %></th>
+                        <th>$<%= order.total.toFixed(2) %></th>
+                    </tr>
+                <%
+                }
+                %>
+            </table>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,15 @@
+#errors{
+    background-color: rgb(233, 132, 152);
+    padding: .5em 0;
+    border-bottom: solid black;
+}
+#errors h3{
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+    margin: 0;
+}
+.error{
+    text-align: center;
+    font-size: 1.2em;
+}

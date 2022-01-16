@@ -1,0 +1,39 @@
+header{
+    width: 70%;
+    margin: 0 15%;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+main{
+    width: 70%;
+    margin: 0 15%;
+    border: solid black;
+}
+label{
+    display: inline-block;
+    clear: left;
+    text-align: right;
+    width: 40%;
+    margin-top: 1em;
+    margin-right: 1em;
+}
+input, select{
+    display: inline-block;
+    margin-top: 1em;
+}
+select{
+    width: 177px;
+}
+#submit{
+    margin-left: 40%;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    width: 20%;
+    height: 7%;
+    font-size: large;
+}
+p{
+    text-align: center;
+}

@@ -1,0 +1,30 @@
+header{
+    width: 70%;
+    margin: 0 15%;
+}
+h1{
+    text-align: center;
+}
+main{
+    width: 70%;
+    margin: 0 15%;
+    border: solid black;
+}
+table{
+    margin-left: 33%;
+    margin-bottom: 1em;
+}
+td{
+    font-size: 1.5em;
+    padding-top: .9em;
+}
+td:nth-child(1){
+    text-align: right;
+}
+td:nth-child(2){
+    padding-left: 1em;
+    padding-right: 1em;
+}
+p{
+    text-align: center;
+}

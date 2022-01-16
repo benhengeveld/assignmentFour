@@ -1,0 +1,61 @@
+<form action="order" method="POST">
+    <label for="name">Name*:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="address">Address*:</label>
+    <input type="text" id="address" name="address">
+    <br>
+    <label for="city">City*:</label>
+    <input type="text" id="city" name="city">
+    <br>
+    <label for="postalCode">Postal Code*:</label>
+    <input type="text" id="postalCode" name="postalCode" placeholder="X9X X9X">
+    <br>
+    
+    <label for="province">Province*:</label>
+    <select name="province" id="province">
+        <option value="">Select a Province</option>
+        <option value="ON">Ontario</option>
+        <option value="QC">Quebec</option>
+        <option value="NS">Nova Scotia</option>
+        <option value="NB">New Brunswick</option>
+        <option value="MB">Manitoba</option>
+        <option value="BC">British Columbia</option>
+        <option value="PE">Prince Edward Island</option>
+        <option value="SK">Saskatchewan</option>
+        <option value="AB">Alberta</option>
+        <option value="NL">Newfoundland and Labrador</option>
+        <option value="NT">Northwest Territories</option>
+        <option value="YT">Yukon</option>
+        <option value="NU">Nunavut</option>
+    </select>
+    <br>
+
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+    <br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email">
+    <br>
+    
+    <label for="productOne">Product 1 ($10):</label>
+    <input type="text" id="productOne" name="productOne" placeholder="Enter a number">
+    <br>
+    <label for="productTwo">Product 2 ($20):</label>
+    <input type="text" id="productTwo" name="productTwo" placeholder="Enter a number">
+    <br>
+    <label for="productThree">Product 3 ($30):</label>
+    <input type="text" id="productThree" name="productThree" placeholder="Enter a number">
+    <br>
+    
+    <label for="deliveryTime">Delivery Time*:</label>
+    <select name="deliveryTime" id="deliveryTime">
+        <option value="">Select a Delivery Time</option>
+        <option value="3">3 Days</option>
+        <option value="2">2 Days</option>
+        <option value="1">1 Days</option>
+    </select>
+
+    <br>
+    <input type="submit" value="Place Order" id="submit">
+</form>

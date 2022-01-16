@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment Four by Ben Hengeveld</title>
+        <link rel="stylesheet" href="receipt.css">
+    </head>
+
+    <body>
+        <header>
+            <h1><u>My Shop</u></h1>
+        </header>
+        
+        <main>
+            <table>
+                <tr><td>Name</td><td>:</td><td><%= name %></td></tr>
+                <tr><td>Address</td><td>:</td><td><%= address %></td></tr>
+                <tr><td>City</td><td>:</td><td><%= city %></td></tr>
+                <tr><td>Postal Code</td><td>:</td><td><%= postalCode %></td></tr>
+                <tr><td>Province</td><td>:</td><td><%= province %></td></tr>
+                <tr><td>Phone Number</td><td>:</td><td><%= phone %></td></tr>
+                <tr><td>Email</td><td>:</td><td><%= email %></td></tr>
+
+                <%
+                if(productOne >= 1){
+                    %>
+                    <tr><td><%= productOne %> Product 1 @ $10</td><td>:</td><td>$<%= productOnePrice.toFixed(2) %></td></tr>
+                    <%
+                }
+                if(productTwo >= 1){
+                    %>
+                    <tr><td><%= productTwo %> Product 2 @ $20</td><td>:</td><td>$<%= productTwoPrice.toFixed(2) %></td></tr>
+                    <%
+                }
+                if(productThree >= 1){
+                    %>
+                    <tr><td><%= productThree %> Product 3 @ $30</td><td>:</td><td>$<%= productThreePrice.toFixed(2) %></td></tr>
+                    <%
+                }
+                %>
+
+                <tr><td>Shipping Charges</td><td>:</td><td>$<%= shippingCharge.toFixed(2) %></td></tr>
+                <tr><td>Sub Total</td><td>:</td><td>$<%= subTotal.toFixed(2) %></td></tr>
+                <tr><td>Tax</td><td>:</td><td>$<%= tax.toFixed(2) %></td></tr>
+                <tr><td>Total</td><td>:</td><td>$<%= total.toFixed(2) %></td></tr>
+            </table>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+header{
+    width: 70%;
+    margin: 0 15%;
+}
+h1{
+    text-align: center;
+    text-decoration: underline;
+}
+
+table{
+    border-collapse: collapse;
+}
+table, th, td{
+    border: solid black;
+}
+table tr:first-child {
+    background-color: rgb(199, 154, 154);
+}
+table tr:first-child th{
+    text-decoration: underline;
+}
+th{
+    padding: .5em;
+}
